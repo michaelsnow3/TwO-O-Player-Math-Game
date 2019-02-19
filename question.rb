@@ -1,10 +1,11 @@
 #question class generates questions and validates answers
 class Question
 
-  attr_accessor :question
+  attr_reader :question
+
   def initialize
     @answer = 0
-    @question = generate_question
+    @question = ""
   end
 
   def generate_question

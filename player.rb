@@ -3,7 +3,6 @@ class Player
   
   @@STARTING_LIVES = 3
 
-  attr_accessor :lives
   attr_reader :name
 
   def initialize(name)
@@ -21,11 +20,11 @@ class Player
   end
 
   def get_score
-    "#{lives}/#{@@STARTING_LIVES}"
+    "#{@lives}/#{@@STARTING_LIVES}"
   end
 
   def lost
-    lives == 0
+    @lives == 0
   end
 
 end

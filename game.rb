@@ -15,6 +15,7 @@ class Game
     puts "==== GAME BEGINS! ===="
     
     until @player1.lost || @player2.lost
+      
       #start of turn
       puts "==== NEW TURN ===="
 
